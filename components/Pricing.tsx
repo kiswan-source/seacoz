@@ -36,7 +36,7 @@ export default function Pricing() {
         <p style={{ color: '#94a3b8', marginBottom: 64, maxWidth: 480, margin: '0 auto 64px' }}>
           Transparan, terjangkau, dan fleksibel sesuai kebutuhan bisnis Anda.
         </p>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 24 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 24 }}>
           {plans.map((p) => (
             <div key={p.name} style={{
               borderRadius: 20,
